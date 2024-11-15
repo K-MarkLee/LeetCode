@@ -1,7 +1,7 @@
 # Write your MySQL query statement below
 select
 case 
-    when e.id is not null 
+    when u.id is not null 
     then u.unique_id
     else null
 end as unique_id,
