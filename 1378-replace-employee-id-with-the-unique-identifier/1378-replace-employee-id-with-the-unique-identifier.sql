@@ -1,11 +1,7 @@
 # Write your MySQL query statement below
-select
-case 
-    when u.id is not null 
-    then u.unique_id
-    else null
-end as unique_id,
-e.name
-from Employees e
-left join EmployeeUNI u
-on e.id = u.id
+SELECT
+    u.unique_id AS unique_id,
+    e.name
+FROM Employees e
+LEFT JOIN EmployeeUNI u
+ON e.id = u.id;
