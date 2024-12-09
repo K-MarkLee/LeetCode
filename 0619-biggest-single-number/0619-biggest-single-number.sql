@@ -1,5 +1,5 @@
 # Write your MySQL query statement below
-select ( select num
+select (select num
 from MyNumbers
 group by num 
 having count(num) < 2
